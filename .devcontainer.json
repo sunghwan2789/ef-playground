@@ -1,0 +1,10 @@
+{
+  "dockerComposeFile": "compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "ms-dotnettools.csharp",
+    "ms-azuretools.vscode-docker",
+  ],
+  "onCreateCommand": "dotnet tool restore; dotnet restore",
+}

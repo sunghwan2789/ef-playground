@@ -1,0 +1,17 @@
+services:
+  dev:
+    image: mcr.microsoft.com/dotnet/sdk:6.0
+    volumes:
+      - .:/workspace:cached
+    command: sleep infinity
+  pgsql:
+    image: postgres:14
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=postgres
+
+volumes:
+  pgdata:
