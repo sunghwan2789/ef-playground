@@ -4,4 +4,5 @@ public enum DataProvider
 {
     PostgreSql,
     Oracle,
+    Sqlite,
 }
