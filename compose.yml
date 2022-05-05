@@ -3,6 +3,10 @@ services:
     image: mcr.microsoft.com/dotnet/sdk:6.0
     volumes:
       - .:/workspace:cached
+    env_file:
+      - .env
+    environment:
+      - TNS_ADMIN=/workspace/wallet
     command: sleep infinity
   pgsql:
     image: postgres:14
