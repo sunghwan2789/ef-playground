@@ -38,7 +38,7 @@ namespace Infrastructure.Oracle.Migrations
                         new
                         {
                             Name = "root",
-                            Permissions = "[0,1,2,3]"
+                            Permissions = "[0,1,2,3,4]"
                         },
                         new
                         {

@@ -6,4 +6,5 @@ public enum Permission
     WriteUserProfile,
     ReadMyProfile,
     WriteMyProfile,
+    Write,
 }
