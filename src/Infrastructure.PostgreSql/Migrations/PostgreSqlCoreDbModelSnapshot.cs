@@ -43,6 +43,11 @@ namespace Infrastructure.PostgreSql.Migrations
                         },
                         new
                         {
+                            Name = "manager",
+                            Permissions = new[] { 0, 1, 2, 3 }
+                        },
+                        new
+                        {
                             Name = "guest",
                             Permissions = new[] { 2, 3 }
                         });

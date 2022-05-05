@@ -21,6 +21,17 @@ public abstract class CoreDb : DbContext
                 },
                 new Role
                 {
+                    Name = "manager",
+                    Permissions = new Permission[]
+                    {
+                        Permission.ReadUserProfile,
+                        Permission.WriteUserProfile,
+                        Permission.ReadMyProfile,
+                        Permission.WriteMyProfile,
+                    },
+                },
+                new Role
+                {
                     Name = "guest",
                     Permissions = new Permission[]
                     {

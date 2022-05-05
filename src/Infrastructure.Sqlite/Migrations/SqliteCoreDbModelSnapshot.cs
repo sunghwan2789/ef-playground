@@ -37,6 +37,11 @@ namespace Infrastructure.Sqlite.Migrations
                         },
                         new
                         {
+                            Name = "manager",
+                            Permissions = "[0,1,2,3]"
+                        },
+                        new
+                        {
                             Name = "guest",
                             Permissions = "[2,3]"
                         });

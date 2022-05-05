@@ -2,6 +2,7 @@
 using Infrastructure.Oracle;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
 
@@ -10,9 +11,10 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace Infrastructure.Oracle.Migrations
 {
     [DbContext(typeof(OracleCoreDb))]
-    partial class OracleCoreDbModelSnapshot : ModelSnapshot
+    [Migration("20220505071525_AddManagerRoleSeed")]
+    partial class AddManagerRoleSeed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
